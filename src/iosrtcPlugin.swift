@@ -287,6 +287,7 @@ class iosrtcPlugin : CDVPlugin {
     }
 
     fileprivate func getFirstMediaStream(_ pluginMediaStream: inout PluginMediaStream?) {
+		NSLog("using fail-safe getFirstMediaStream")
         let id66 = self.pluginMediaStreams.keys.first
         pluginMediaStream = self.pluginMediaStreams[id66!]
     }
